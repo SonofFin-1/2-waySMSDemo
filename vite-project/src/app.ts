@@ -391,6 +391,7 @@ export function initApp() {
   initializeWorkflowButtons()
   updateVersionButtons()
   updateAIToggleButton()
+  loadLightModePreference()
   // Set initial visibility of phone and dataflow (hidden for Legal Requirements)
   updatePhoneAndDataflowVisibility()
   
@@ -4010,6 +4011,7 @@ function updateAIToggleButton() {
 
 function handleLightModeToggle() {
   lightModeEnabled = !lightModeEnabled
+  localStorage.setItem('lightModeEnabled', String(lightModeEnabled))
   updateLightModeButton()
   applyLightMode()
 }
@@ -4030,6 +4032,15 @@ function applyLightMode() {
     } else {
       phoneContainer.classList.remove('light-mode')
     }
+  }
+}
+
+function loadLightModePreference() {
+  const saved = localStorage.getItem('lightModeEnabled')
+  if (saved === 'true') {
+    lightModeEnabled = true
+    updateLightModeButton()
+    applyLightMode()
   }
 }
 
