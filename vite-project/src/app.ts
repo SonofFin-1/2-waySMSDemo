@@ -46,8 +46,6 @@ let isSpeakerOn: boolean = false
 let isKeypadVisible: boolean = false
 let keypadInput: string = ''
 
-// Phone display mode
-
 let callStartTime: Date | null = null
 let callDurationInterval: number | null = null
 
