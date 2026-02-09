@@ -17,42 +17,6 @@
   --border-color: #38383A;
 }
 
-/* Light mode for phone */
-.phone-container.light-mode {
-  --bg-color: #F2F2F7;
-  --chat-bg: #FFFFFF;
-  --message-sent-bg: #007AFF;
-  --message-received-bg: #E9E9EB;
-  --text-primary: #000000;
-  --text-secondary: #6C6C70;
-  --border-color: #C6C6C8;
-}
-
-.phone-container.light-mode .phone-status-bar {
-  background: rgba(255, 255, 255, 0.9);
-  color: #000000;
-}
-
-.phone-container.light-mode .messages-container {
-  background: var(--bg-color);
-}
-
-.phone-container.light-mode .message-received .message-bubble {
-  color: #000000;
-}
-
-.phone-container.light-mode .tab-btn {
-  color: #6C6C70;
-}
-
-.phone-container.light-mode .tab-btn.active {
-  color: var(--primary-color);
-}
-
-.phone-container.light-mode .tab-btn:hover {
-  color: #000000;
-}
-
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
   background: var(--bg-color);
