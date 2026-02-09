@@ -47,6 +47,7 @@ let isKeypadVisible: boolean = false
 let keypadInput: string = ''
 
 // Phone display mode
+let isLightMode: boolean = false
 
 let callStartTime: Date | null = null
 let callDurationInterval: number | null = null
@@ -499,6 +500,9 @@ function getAppHTML(): string {
         <div class="phone-status-bar">
           <span class="time" id="phoneTime">9:41</span>
           <div class="status-icons">
+            <button class="theme-toggle-btn" id="themeToggleBtn" title="Toggle light/dark mode">
+              ${isLightMode ? '🌙' : '☀️'}
+            </button>
             <span>📶</span>
             <span>🔋</span>
           </div>
@@ -823,6 +827,9 @@ function setupEventListeners() {
   
   // AI toggle button
   document.getElementById('aiToggleBtn')?.addEventListener('click', handleAIToggle)
+
+  // Theme toggle button (light/dark mode)
+  document.getElementById('themeToggleBtn')?.addEventListener('click', handleThemeToggle)
 
   // Calling overlay buttons
   document.getElementById('acceptBtn')?.addEventListener('click', handleCallAccept)
@@ -3995,6 +4002,25 @@ function updateAIToggleButton() {
   if (btn) {
     btn.className = `ai-toggle-btn ${aiEnabled ? 'enabled' : 'disabled'}`
     btn.textContent = aiEnabled ? '✓' : '✕'
+  }
+}
+
+function handleThemeToggle() {
+  isLightMode = !isLightMode
+  updateThemeToggleButton()
+
+  // Toggle the light-mode class on the phone container
+  const phoneContainer = document.querySelector('.phone-container') as HTMLElement
+  if (phoneContainer) {
+    phoneContainer.classList.toggle('light-mode', isLightMode)
+  }
+}
+
+function updateThemeToggleButton() {
+  const btn = document.getElementById('themeToggleBtn')
+  if (btn) {
+    btn.textContent = isLightMode ? '🌙' : '☀️'
+    btn.title = isLightMode ? 'Switch to dark mode' : 'Switch to light mode'
   }
 }
 

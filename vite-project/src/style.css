@@ -26,10 +26,11 @@
   --text-primary: #000000;
   --text-secondary: #6C6C70;
   --border-color: #C6C6C8;
+  background: var(--chat-bg);
 }
 
 .phone-container.light-mode .phone-status-bar {
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.95);
   color: #000000;
 }
 
@@ -51,6 +52,193 @@
 
 .phone-container.light-mode .tab-btn:hover {
   color: #000000;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.phone-container.light-mode .phone-header {
+  background: var(--chat-bg);
+  border-bottom-color: var(--border-color);
+}
+
+.phone-container.light-mode .tabs-container {
+  background: var(--chat-bg);
+  border-bottom-color: var(--border-color);
+}
+
+.phone-container.light-mode .chat-header {
+  background: var(--chat-bg);
+}
+
+.phone-container.light-mode .contact-name {
+  color: var(--text-primary);
+}
+
+.phone-container.light-mode .contact-status {
+  color: var(--text-secondary);
+}
+
+.phone-container.light-mode .input-area {
+  background: var(--chat-bg);
+  border-top-color: var(--border-color);
+}
+
+.phone-container.light-mode .option-btn {
+  background: var(--message-received-bg);
+  color: var(--text-primary);
+  border-color: var(--border-color);
+}
+
+.phone-container.light-mode .option-btn:hover {
+  background: #D1D1D6;
+}
+
+.phone-container.light-mode .text-input-container {
+  background: var(--message-received-bg);
+  border-color: var(--border-color);
+}
+
+.phone-container.light-mode .user-text-input {
+  color: var(--text-primary);
+}
+
+.phone-container.light-mode .user-text-input::placeholder {
+  color: var(--text-secondary);
+}
+
+.phone-container.light-mode .modal-content {
+  background: var(--chat-bg);
+  border-color: var(--border-color);
+}
+
+.phone-container.light-mode .modal-content h3 {
+  color: var(--text-primary);
+}
+
+.phone-container.light-mode .picker-group label {
+  color: var(--text-secondary);
+}
+
+.phone-container.light-mode .picker-group input {
+  background: var(--message-received-bg);
+  border-color: var(--border-color);
+  color: var(--text-primary);
+}
+
+.phone-container.light-mode .time-select {
+  background: var(--message-received-bg);
+  border-color: var(--border-color);
+  color: var(--text-primary);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23000000' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+}
+
+.phone-container.light-mode .time-separator {
+  color: var(--text-primary);
+}
+
+.phone-container.light-mode .btn-secondary {
+  background: var(--message-received-bg);
+  color: var(--text-primary);
+  border-color: var(--border-color);
+}
+
+/* Light mode dialogue editor */
+.phone-container.light-mode .dialogue-editor-container {
+  background: var(--bg-color);
+}
+
+.phone-container.light-mode .dialogue-editor-header {
+  border-bottom-color: var(--border-color);
+}
+
+.phone-container.light-mode .dialogue-editor-header h3 {
+  color: var(--text-primary);
+}
+
+.phone-container.light-mode .dialogue-subtitle {
+  color: var(--text-secondary);
+}
+
+.phone-container.light-mode .dialogue-message-item {
+  border-color: var(--border-color);
+}
+
+.phone-container.light-mode .dialogue-message-number {
+  background: var(--chat-bg);
+  border-color: var(--border-color);
+  color: var(--text-secondary);
+}
+
+.phone-container.light-mode .dialogue-text-input {
+  background: var(--chat-bg);
+  border-color: var(--border-color);
+  color: var(--text-primary);
+}
+
+.phone-container.light-mode .dialogue-option-input {
+  background: var(--chat-bg);
+  border-color: var(--border-color);
+  color: var(--text-primary);
+}
+
+.phone-container.light-mode .dialogue-no-options {
+  background: var(--chat-bg);
+  border-color: var(--border-color);
+  color: var(--text-secondary);
+}
+
+.phone-container.light-mode .dialogue-message-actions {
+  border-top-color: var(--border-color);
+}
+
+/* Light mode keypad and contacts overlays */
+.phone-container.light-mode .keypad-content,
+.phone-container.light-mode .contacts-content {
+  background: var(--chat-bg);
+}
+
+.phone-container.light-mode .keypad-header,
+.phone-container.light-mode .contacts-header {
+  border-bottom-color: var(--border-color);
+}
+
+.phone-container.light-mode .keypad-display {
+  color: var(--text-primary);
+}
+
+.phone-container.light-mode .keypad-key {
+  background: rgba(0, 0, 0, 0.05);
+  color: var(--text-primary);
+}
+
+.phone-container.light-mode .keypad-key:active {
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.phone-container.light-mode .key-letters {
+  color: var(--text-secondary);
+}
+
+.phone-container.light-mode .keypad-delete {
+  background: rgba(0, 0, 0, 0.05);
+  color: var(--text-primary);
+}
+
+.phone-container.light-mode .contacts-header h2 {
+  color: var(--text-primary);
+}
+
+.phone-container.light-mode .contact-item {
+  background: var(--message-received-bg);
+  border-color: var(--border-color);
+}
+
+.phone-container.light-mode .contact-name-large {
+  color: var(--text-primary);
+}
+
+.phone-container.light-mode .contact-phone,
+.phone-container.light-mode .contact-email {
+  color: var(--text-secondary);
 }
 
 body {
@@ -647,6 +835,31 @@ body {
 .status-icons {
   display: flex;
   gap: 4px;
+  align-items: center;
+}
+
+.theme-toggle-btn {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 2px 6px;
+  border-radius: 4px;
+  transition: all 0.2s;
+  line-height: 1;
+}
+
+.theme-toggle-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+}
+
+.theme-toggle-btn:active {
+  transform: scale(0.95);
+}
+
+.phone-container.light-mode .theme-toggle-btn:hover {
+  background: rgba(0, 0, 0, 0.1);
 }
 
 .chat-header {
