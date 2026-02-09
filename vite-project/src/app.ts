@@ -442,6 +442,8 @@ function getAppHTML(): string {
           <button class="workflow-btn ${selectedWorkflow === 'legal requirements' ? 'active' : ''}" data-workflow="legal requirements">
             Legal Requirements
           </button>
+          <button class="workflow-btn yellow-btn">Yellow</button>
+          <button class="workflow-btn blue-btn">Blue</button>
         </div>
       </div>
       <div class="versions-section">

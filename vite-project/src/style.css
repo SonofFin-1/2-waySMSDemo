@@ -297,6 +297,30 @@ body {
   color: #fff;
 }
 
+.workflow-btn.yellow-btn {
+  border-color: #FFD700;
+  background: #FFD700;
+  color: #000;
+}
+
+.workflow-btn.yellow-btn:hover {
+  transform: scale(1.05);
+  background: #FFC000;
+  border-color: #FFC000;
+}
+
+.workflow-btn.blue-btn {
+  border-color: #007AFF;
+  background: #007AFF;
+  color: #fff;
+}
+
+.workflow-btn.blue-btn:hover {
+  transform: scale(1.05);
+  background: #0066CC;
+  border-color: #0066CC;
+}
+
 .version-buttons {
   display: flex;
   gap: 6px;
