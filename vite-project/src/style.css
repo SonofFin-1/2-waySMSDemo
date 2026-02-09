@@ -17,6 +17,16 @@
   --border-color: #38383A;
 }
 
+/* Light mode theme */
+.light-mode {
+  --bg-color: #F2F2F7;
+  --chat-bg: #FFFFFF;
+  --message-received-bg: #E5E5EA;
+  --text-primary: #000000;
+  --text-secondary: #6C6C70;
+  --border-color: #C6C6C8;
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
   background: var(--bg-color);
@@ -369,6 +379,43 @@ body {
 .ai-toggle-btn.disabled {
   border-color: #FF3B30;
   background: #FF3B30;
+  color: #fff;
+}
+
+.light-mode-section {
+  margin-bottom: 6px;
+}
+
+.light-mode-btn {
+  padding: 6px 14px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  background: #fff;
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  min-width: 50px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.light-mode-btn:hover {
+  transform: scale(1.05);
+}
+
+.light-mode-btn.enabled {
+  border-color: #FFB800;
+  background: #FFB800;
+  color: #fff;
+}
+
+.light-mode-btn.disabled {
+  border-color: #5856D6;
+  background: #5856D6;
   color: #fff;
 }
 

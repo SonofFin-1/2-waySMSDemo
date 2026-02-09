@@ -39,6 +39,7 @@ let userHasStopped: boolean = false
 let selectedWorkflow: string = 'webform'
 let selectedVersion: string = 'A'
 let aiEnabled: boolean = false
+let lightModeEnabled: boolean = false
 
 // Call control states
 let isMuted: boolean = false
@@ -461,6 +462,12 @@ function getAppHTML(): string {
           ${aiEnabled ? '✓' : '✕'}
         </button>
       </div>
+      <div class="light-mode-section">
+        <h3 class="section-title">Light Mode</h3>
+        <button class="light-mode-btn ${lightModeEnabled ? 'enabled' : 'disabled'}" id="lightModeBtn">
+          ${lightModeEnabled ? '☀️' : '🌙'}
+        </button>
+      </div>
     </div>
     <div class="legal-requirements-box" id="legalRequirementsBox" style="display: none;">
       <div class="legal-requirements-header">
@@ -823,6 +830,9 @@ function setupEventListeners() {
   
   // AI toggle button
   document.getElementById('aiToggleBtn')?.addEventListener('click', handleAIToggle)
+
+  // Light mode toggle button
+  document.getElementById('lightModeBtn')?.addEventListener('click', handleLightModeToggle)
 
   // Calling overlay buttons
   document.getElementById('acceptBtn')?.addEventListener('click', handleCallAccept)
@@ -3995,6 +4005,31 @@ function updateAIToggleButton() {
   if (btn) {
     btn.className = `ai-toggle-btn ${aiEnabled ? 'enabled' : 'disabled'}`
     btn.textContent = aiEnabled ? '✓' : '✕'
+  }
+}
+
+function handleLightModeToggle() {
+  lightModeEnabled = !lightModeEnabled
+  updateLightModeButton()
+  applyLightMode()
+}
+
+function updateLightModeButton() {
+  const btn = document.getElementById('lightModeBtn')
+  if (btn) {
+    btn.className = `light-mode-btn ${lightModeEnabled ? 'enabled' : 'disabled'}`
+    btn.textContent = lightModeEnabled ? '☀️' : '🌙'
+  }
+}
+
+function applyLightMode() {
+  const phoneContainer = document.querySelector('.phone-container')
+  if (phoneContainer) {
+    if (lightModeEnabled) {
+      phoneContainer.classList.add('light-mode')
+    } else {
+      phoneContainer.classList.remove('light-mode')
+    }
   }
 }
 
