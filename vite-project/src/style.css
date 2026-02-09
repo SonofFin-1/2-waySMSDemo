@@ -17,42 +17,6 @@
   --border-color: #38383A;
 }
 
-/* Light mode for phone */
-.phone-container.light-mode {
-  --bg-color: #F2F2F7;
-  --chat-bg: #FFFFFF;
-  --message-sent-bg: #007AFF;
-  --message-received-bg: #E9E9EB;
-  --text-primary: #000000;
-  --text-secondary: #6C6C70;
-  --border-color: #C6C6C8;
-}
-
-.phone-container.light-mode .phone-status-bar {
-  background: rgba(255, 255, 255, 0.9);
-  color: #000000;
-}
-
-.phone-container.light-mode .messages-container {
-  background: var(--bg-color);
-}
-
-.phone-container.light-mode .message-received .message-bubble {
-  color: #000000;
-}
-
-.phone-container.light-mode .tab-btn {
-  color: #6C6C70;
-}
-
-.phone-container.light-mode .tab-btn.active {
-  color: var(--primary-color);
-}
-
-.phone-container.light-mode .tab-btn:hover {
-  color: #000000;
-}
-
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
   background: var(--bg-color);
@@ -405,43 +369,6 @@ body {
 .ai-toggle-btn.disabled {
   border-color: #FF3B30;
   background: #FF3B30;
-  color: #fff;
-}
-
-.light-mode-section {
-  margin-bottom: 6px;
-}
-
-.light-mode-btn {
-  padding: 6px 14px;
-  border: 2px solid #ddd;
-  border-radius: 6px;
-  background: #fff;
-  color: #000;
-  font-size: 16px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.2s;
-  min-width: 50px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.light-mode-btn:hover {
-  transform: scale(1.05);
-}
-
-.light-mode-btn.enabled {
-  border-color: #FFD60A;
-  background: #FFD60A;
-  color: #000;
-}
-
-.light-mode-btn.disabled {
-  border-color: #5E5CE6;
-  background: #5E5CE6;
   color: #fff;
 }
 
