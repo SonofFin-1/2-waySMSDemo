@@ -1,0 +1,9 @@
+project:
+  name: vite-project
+  description: Auto-generated config for vite-project
+services:
+  dev:
+    name: Dev Server
+    command: npm run dev
+    tags:
+      - node
