@@ -53,6 +53,43 @@
   color: #000000;
 }
 
+.phone-container.light-mode .chat-header {
+  background: var(--chat-bg);
+  border-bottom-color: var(--border-color);
+}
+
+.phone-container.light-mode .contact-name {
+  color: #000000;
+}
+
+.phone-container.light-mode .input-area {
+  background: var(--chat-bg);
+  border-top-color: var(--border-color);
+}
+
+.phone-container.light-mode .option-btn {
+  background: var(--message-received-bg);
+  border-color: var(--border-color);
+  color: #000000;
+}
+
+.phone-container.light-mode .option-btn:hover {
+  background: #D1D1D6;
+}
+
+.phone-container.light-mode .text-input-container {
+  background: var(--message-received-bg);
+  border-color: var(--border-color);
+}
+
+.phone-container.light-mode .user-text-input {
+  color: #000000;
+}
+
+.phone-container.light-mode .user-text-input::placeholder {
+  color: var(--text-secondary);
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
   background: var(--bg-color);
