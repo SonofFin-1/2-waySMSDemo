@@ -321,6 +321,18 @@ body {
   border-color: #0066CC;
 }
 
+.workflow-btn.green-btn {
+  border-color: #34C759;
+  background: #34C759;
+  color: #fff;
+}
+
+.workflow-btn.green-btn:hover {
+  transform: scale(1.05);
+  background: #2DB84D;
+  border-color: #2DB84D;
+}
+
 .version-buttons {
   display: flex;
   gap: 6px;
