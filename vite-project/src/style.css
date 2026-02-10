@@ -321,6 +321,30 @@ body {
   border-color: #0066CC;
 }
 
+.workflow-btn.purple-btn {
+  border-color: #9C27B0;
+  background: #9C27B0;
+  color: #fff;
+}
+
+.workflow-btn.purple-btn:hover {
+  transform: scale(1.05);
+  background: #7B1FA2;
+  border-color: #7B1FA2;
+}
+
+.workflow-btn.pink-btn {
+  border-color: #FF1493;
+  background: #FF1493;
+  color: #fff;
+}
+
+.workflow-btn.pink-btn:hover {
+  transform: scale(1.05);
+  background: #FF69B4;
+  border-color: #FF69B4;
+}
+
 .version-buttons {
   display: flex;
   gap: 6px;
