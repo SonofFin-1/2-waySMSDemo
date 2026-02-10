@@ -321,6 +321,18 @@ body {
   border-color: #0066CC;
 }
 
+.workflow-btn.orange-btn {
+  border-color: #FF9500;
+  background: #FF9500;
+  color: #fff;
+}
+
+.workflow-btn.orange-btn:hover {
+  transform: scale(1.05);
+  background: #E08600;
+  border-color: #E08600;
+}
+
 .version-buttons {
   display: flex;
   gap: 6px;
