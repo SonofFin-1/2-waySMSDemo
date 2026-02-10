@@ -444,6 +444,8 @@ function getAppHTML(): string {
           </button>
           <button class="workflow-btn yellow-btn">Yellow</button>
           <button class="workflow-btn blue-btn">Blue</button>
+          <button class="workflow-btn purple-btn">Purple</button>
+          <button class="workflow-btn pink-btn">Pink</button>
         </div>
       </div>
       <div class="versions-section">
